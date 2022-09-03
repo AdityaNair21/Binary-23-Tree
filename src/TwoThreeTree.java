@@ -1,4 +1,4 @@
-public class Tree {
+public class TwoThreeTree {
 	
 	private Node2 head;
 	

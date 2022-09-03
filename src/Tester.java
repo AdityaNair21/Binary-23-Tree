@@ -5,7 +5,7 @@ public class Tester {
 	
 	//works
 	public static void TaylorVideo2Example() {
-		Tree t = new Tree();
+		TwoThreeTree t = new TwoThreeTree();
 		
 		t.insert(5);
 		System.out.println(t.toString());
@@ -44,7 +44,7 @@ public class Tester {
 	//works
 	public static void WhiteboardExample() {
 
-		Tree t = new Tree();
+		TwoThreeTree t = new TwoThreeTree();
 		
 		t.insert(10);
 		t.insert(50);
@@ -79,7 +79,7 @@ public class Tester {
 	//works
 	public static void GoogleSlides() {
  		//TEST 3 GOOGLE SLIDES TEST WORKS
-		Tree t = new Tree();
+		TwoThreeTree t = new TwoThreeTree();
 		System.out.println(t.toString());
 		t.insert(20);
 		System.out.println(t.toString());
@@ -105,7 +105,7 @@ public class Tester {
 	//works
 	public static void TaylorVideo1Example() {
 		//TAYLOR VIDEO 1 EXAMPLE
-		Tree t = new Tree();
+		TwoThreeTree t = new TwoThreeTree();
 		t.insert(5);
 		t.insert(10);
 		t.insert(20);
@@ -123,7 +123,7 @@ public class Tester {
 	//works
 	public static void FourLayerTest() {
 		//TEST 1 Four LAYERS WORKDS
-		Tree t = new Tree();
+		TwoThreeTree t = new TwoThreeTree();
 		t.insert(50);
 		System.out.println(t.toString());
 		t.insert(24);
@@ -164,7 +164,7 @@ public class Tester {
 		
 		//TEST2 RANDOM WORKS
 		
-		Tree t = new Tree();
+		TwoThreeTree t = new TwoThreeTree();
 		ArrayList<Integer> arr = new ArrayList<Integer>();
 		for(int i = 0; i < 52; i++) {
 			int rand = (int)(Math.random()*100);
@@ -267,7 +267,7 @@ public class Tester {
 			}
 		}
 		
-		Tree t = new Tree();
+		TwoThreeTree t = new TwoThreeTree();
 		for(int j = 0; j < arr.length; j++) {
 			
 			t.insert(arr[j]);
@@ -288,7 +288,7 @@ public class Tester {
 	
 	//works till 31 at least
 	public static void IncreasingTest() {
-		Tree t = new Tree();
+		TwoThreeTree t = new TwoThreeTree();
 		
 //		t.insert(1);
 //		System.out.println(t.toString());
@@ -364,7 +364,7 @@ public class Tester {
 	
 	
 	
-	public static ArrayList<Integer> getArrayList(Tree t) {
+	public static ArrayList<Integer> getArrayList(TwoThreeTree t) {
 		Node2 n = t.getHead();
 		ArrayList<Integer> arr = new ArrayList<Integer>();
 		getArrayListRecurse(arr, n);
@@ -381,7 +381,7 @@ public class Tester {
 		
 	}
 	
-	static void printGroup(Tree t, ArrayList<Integer> arr2) {
+	static void printGroup(TwoThreeTree t, ArrayList<Integer> arr2) {
 		for(int i = 0; i < arr2.size(); i++) {
 			for(int j = 0; j < arr2.size(); j++) {
 				if(t.isGroupShift(t.getNodeRecurse(t.getHead(), arr2.get(i)), t.getNodeRecurse(t.getHead(), arr2.get(j)),0)) {

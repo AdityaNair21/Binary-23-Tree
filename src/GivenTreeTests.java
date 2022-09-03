@@ -9,7 +9,7 @@ public class GivenTreeTests
    @Test
    public void singleNodeTree()
    {
-      Tree t = new Tree();
+      TwoThreeTree t = new TwoThreeTree();
       
       t.insert(9);
       System.out.println(t.size(9));
@@ -32,7 +32,7 @@ public class GivenTreeTests
       
       assertEquals(0, t.size(18));
 
-      t = new Tree();
+      t = new TwoThreeTree();
       t.insert(15);
       t.insert(9);
       assertEquals(2, t.size(9));
@@ -50,7 +50,7 @@ public class GivenTreeTests
    @Test
    public void oneSplitLeft()
    {
-      Tree t = new Tree();
+      TwoThreeTree t = new TwoThreeTree();
       t.insert(9);
       t.insert(15);
       t.insert(1);
@@ -74,7 +74,7 @@ public class GivenTreeTests
    @Test
    public void oneSplitRight()
    {
-      Tree t = new Tree();
+      TwoThreeTree t = new TwoThreeTree();
       t.insert(1);
       t.insert(9);
       t.insert(15);
@@ -99,7 +99,7 @@ public class GivenTreeTests
    @Test
    public void oneSplitMiddle()
    {
-      Tree t = new Tree();
+      TwoThreeTree t = new TwoThreeTree();
       t.insert(1);
       t.insert(15);
       t.insert(9);
@@ -125,7 +125,7 @@ public class GivenTreeTests
    @Test
    public void testDuplicates()
    {
-      Tree t = new Tree();
+      TwoThreeTree t = new TwoThreeTree();
       t.insert(1);
       t.insert(9);
       t.insert(15);

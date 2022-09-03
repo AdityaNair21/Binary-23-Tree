@@ -11,7 +11,7 @@ public class TreeTests {
 
 	@Test
 	public void increasingTest() {
-		Tree t = new Tree();
+		TwoThreeTree t = new TwoThreeTree();
 
 		
 		int max = 50;
