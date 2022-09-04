@@ -1,14 +1,16 @@
 # Binary-23-Tree
 
+# What is a 2-3 Tree?
+A 2-3 Tree is a form of a B-tree, which is a self-balancing tree data structure that stores sorted data. Each node can store up to 2 values, and can have up to 3 children. 
 
-
+# What is this project?
+This project is the binary implentation of a 2-3 tree. At its core it is just a simple binary tree, with nodes that have 1 value and 2 children. However, it has a set of methods that organize this binary tree as a 2-3 tree. 
 
 # How it works
-The methods you are interested in are isGroup, and sizeDirectionalRecurse (which is called by isGroup). 
-There is another method called isGroupShift which is used for edge cases in the insert method, so you can ignore this method for the purposes of understanding how my grouping works. 
+The method that allows this binary tree to be read as a two-three tree is the isGroup method.
 
-Here is a visualization of my isGroup, with my best explanation:
-In this binary 2-3 tree below, the only groups, unless I missed any, are (10,50) and (100,200) My isGroup method would look at the total groups to the left and the right of 2 nodes respectively to determine the two nodes are in fact a group. But crucially- it ignores groups on the inside. Here is what I mean. 
+Here is a visualization of the isGroup method:
+In this binary 2-3 tree below, the only groups are (10,50) and (100,200) My isGroup method would look at the total groups to the left and the right of 2 nodes respectively to determine the two nodes are in fact a group. But crucially- it ignores groups on the inside. Here is what I mean. 
 
 EXAMPLE 1:
 (10,50): 
