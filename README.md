@@ -7,10 +7,10 @@ A 2-3 Tree is a form of a B-tree, which is a self-balancing tree data structure 
 This project is the binary implentation of a 2-3 tree. At its core it is just a simple binary tree, with nodes that have 1 value and 2 children. However, it has a set of methods that organize this binary tree as a 2-3 tree. 
 
 # How it works
-The method that allows this binary tree to be read as a two-three tree is the isGroup method.
+The method that allows this binary tree to be read as a two-three tree is the isGroup method. 
 
 Here is a visualization of the isGroup method:
-In this binary 2-3 tree below, the only groups are (10,50) and (100,200) My isGroup method would look at the total groups to the left and the right of 2 nodes respectively to determine the two nodes are in fact a group. But crucially- it ignores groups on the inside. Here is what I mean. 
+In this binary 2-3 tree below, the only groups are (10,50) and (100,200) The isGroup method would look at the total groups to the left and the right of 2 nodes respectively to determine the two nodes are in fact a group. But crucially- it ignores groups on the inside. Here is what I mean. 
 
 EXAMPLE 1:
 (10,50): 
@@ -24,4 +24,5 @@ On the left of (100,200), we will count: (75), (70), and (80). This is a total o
 On the right of (100,200), we will count: (225), (250), and (300). This is a total of THREE. Nothing is on the inside since we are not deep enough yet.
 Since of course 3=3, the program returns true, so 100 and 200 are a group.
 
-image.png
+
+![image](https://user-images.githubusercontent.com/30671624/188293013-864cbcf2-463a-4120-8fa1-cc4e9eef5909.png)
