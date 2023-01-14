@@ -10,7 +10,7 @@ This project can be described as the binary implantation of a 2-3 tree. At its c
 Binary trees can be a very unfriendly to data scientists because of how disorganized and inefficient they can be. That is why the self-balancing 2-3 tree data structure is far preferred when dealing with big data sets. But lets say that for whatever reason, you could not modify the nodes to support this, or had other restrictions where the data itself could not be modified. This project's set of methods can be used on any binary tree without modifying the nodes or data at all, simply by rearranging an organizing the nodes to form a perpetually-balanced tree. 
 
 # How it works
-The core of this project, and the method that allows this binary tree to be read as a two-three tree, is the isGroup method. It took me several, several hours, pages of drawings, and several iterations to come up with the final method. 
+The core of this project, and the method that allows this binary tree to be read as a two-three tree, is the isGroup method. It took me pages of drawings, and several iterations to come up with the final method. 
 
 Here is a visualization of the isGroup method:
 In this binary 2-3 tree below, the only groups are (10,50) and (100,200) The isGroup method would look at the total groups to the left and the right of 2 nodes respectively to determine the two nodes are in fact a group. But crucially- it ignores groups on the inside. Here is what I mean. 
