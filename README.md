@@ -7,7 +7,7 @@ A 2-3 Tree is a form of a B-tree, which is a self-balancing tree data structure 
 This project can be described as the binary implementation of a 2-3 tree. At its core it is just a simple binary tree, with nodes that have 1 value and 2 children. However, it has a set of methods that organize this binary tree as a 2-3 tree, potentially making it a new data structure. 
 
 # Why does it matter?
-Binary trees can be a very unfriendly to data scientists because of how disorganized and inefficient they can be. That is why the self-balancing 2-3 tree data structure is far preferred when dealing with big data sets. But lets say that for whatever reason, you could not modify the nodes to support this, or had other restrictions where the data itself could not be modified. This project's set of methods can be used on any binary tree without modifying the nodes or data at all, simply by rearranging an organizing the nodes to form a perpetually-balanced tree. 
+Binary trees can be a very unfriendly to data scientists because of how disorganized and inefficient they can be. That is why the self-balancing 2-3 tree data structure is far preferred when dealing with big data sets. But lets say that for whatever reason, you could not modify the nodes to support this, or had other restrictions where the data itself could not be modified. This project's set of methods can be used on any binary tree without modifying the nodes or data at all, simply by rearranging and organizing the nodes to form a perpetually-balanced tree. 
 
 # How it works
 The core of this project, and the method that allows this binary tree to be read as a two-three tree, is the isGroup method. It took me pages of drawings, and several iterations to come up with the final method. 
